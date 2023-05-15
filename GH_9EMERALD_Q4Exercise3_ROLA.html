@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Centimeter to Feet Converter
+	</title>
+</head>
+<body>
+	<center>
+	<br><br><br><h1>CENTIMETER TO FEET CONVERTER</h1><br><br><br>
+	<p>centimeter(cm):</p>
+	<input type="text" id="cm" placeholder="Input your value in cm"><br>
+	<input type="submit" value="convert" onclick="converter()"><br><br>
+	<div>feet(ft):<p id="id1"></p></div>
+	<script>
+		function converter(){
+			var num1 = document.getElementById('cm').value;
+			var num = 0.0328084
+			var ft = Number(num1) * Number(num)
+			document.getElementById('id1').innerHTML = ft
+		}
+	</script>
+	</center>
+</body>
+</html>
